@@ -22,7 +22,12 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'Hello'
 				];
-			}else{
+			}else if (strpos($text , 'help') !== false) {		
+				$messages = [
+					'type' => 'text',
+					'text' => 'This application.....'
+				];
+			}else {
 				$messages = [
 					'type' => 'text',
 					'text' => '?????'
