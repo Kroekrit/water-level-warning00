@@ -17,20 +17,30 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			if (strpos($text , 'hello') !== false) {		
+			if (strpos($text , 'สวัสดี') !== false) {		
 				$messages = [
 					'type' => 'text',
-					'text' => 'Hello'
+					'text' => 'สวัสดีค่ะ คุณ....'
 				];
 			}else if (strpos($text , 'help') !== false) {		
 				$messages = [
 					'type' => 'text',
-					'text' => 'This application.....'
+					'text' => 'Level : เช็คระดับน้ำ\nPic : ขอรูปภาพ'
+				];
+			}else if (strpos($text , 'Level') !== false) {		
+				$messages = [
+					'type' => 'text',
+					'text' => 'ระดับน้ำตอนนี้สูง __ cm ค่ะ'
+				];
+			}else if (strpos($text , 'Pic') !== false) {		
+				$messages = [
+					'type' => 'text',
+					'text' => 'รูปภาพ ค่ะ'
 				];
 			}else {
 				$messages = [
 					'type' => 'text',
-					'text' => '?????'
+					'text' => 'กรุณาพิมพ์คำขอใหม่่ค่ะ \nLevel : เช็คระดับน้ำ\nPic : ขอรูปภาพ '
 				];
 			}
 
