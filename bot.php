@@ -37,14 +37,7 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'รูปภาพ ค่ะ'
 				];
-			}else if (strpos($text , 'Sticker') !== false) {		
-				$messages = [
-					'type' => 'sticker',
-					'packageId' => '1'
-					'stickerId' => '1'
-				];
-	
-			}else {
+			}else{
 				$messages = [
 					'type' => 'text',
 					'text' => 'กรุณาพิมพ์คำขอใหม่่ค่ะ \nLevel : เช็คระดับน้ำ\nPic : ขอรูปภาพ '
