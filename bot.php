@@ -25,7 +25,7 @@ if (!is_null($events['events'])) {
 			}else if (strpos($text , 'help') !== false) {		
 				$messages = [
 					'type' => 'text',
-					'text' => 'Level : เช็คระดับน้ำ\nPic : ขอรูปภาพ'
+					'text' => 'Level : เช็คระดับน้ำ   Pic : ขอรูปภาพ'
 				];
 			}else if (strpos($text , 'Level') !== false) {		
 				$messages = [
@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 			}else{
 				$messages = [
 					'type' => 'text',
-					'text' => 'กรุณาพิมพ์คำขอใหม่่ค่ะ \nLevel : เช็คระดับน้ำ\nPic : ขอรูปภาพ '
+					'text' => 'กรุณาพิมพ์คำขอใหม่่ค่ะ   Level : เช็คระดับน้ำ  Pic : ขอรูปภาพ '
 				];
 			}
 
