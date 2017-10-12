@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 				
 				$messages = [
 					'type' => 'text',
-					'text' => $Last_rain.' ครั้ง เมื่อ '.$Date
+					'text' => $Last_rain.' ครั้ง เมื่อ '.$Last_rain
 					];
 				
 			}else{
