@@ -40,13 +40,13 @@ if (!is_null($events['events'])) {
 			}else if (strpos($text , 'Rain') !== false) {	
 				$messages = [
 					'type' => 'text',
-					'text' => $text
+					'text' => $text];
 				$URL_rain = 'https://api.thingspeak.com/channels/345073/feeds/last.json';
 				$json_rain = file_get_contents($URL_rain);
 				$content = json_decode($json_rain);
 				$Last_rain = $content[0]->field1;
 				
-				];
+				
 			}else{
 				$messages = [
 					'type' => 'text',
