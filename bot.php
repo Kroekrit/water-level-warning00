@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 				$Last_rain = $content[0]->field1;
 				$messages = [
 					'type' => 'text',
-					'text' => $URL_rain
+					'text' => '$URL_rain'
 				];
 			}else{
 				$messages = [
