@@ -45,7 +45,7 @@ if (!is_null($events['events'])) {
 				$Last_rain = $content->field1;
 				$messages = [
 					'type' => 'text',
-					'text' => $Last_rain
+					'text' => $Last_rain + ' ครั้ง'
 					];
 				
 			}else{
