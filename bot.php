@@ -44,12 +44,12 @@ if (!is_null($events['events'])) {
 				$content = json_decode($json_rain);
 				$Last_rain = $content->field1;
 				$Date = $content->created_at;
-				$Time = substr($Date, 4, 6);
+				$Time = substr($Date, 12, 19);
 				
 				
 				$messages = [
 					'type' => 'text',
-					'text' => $Last_rain.' ครั้ง เมื่อ '.substr($Date, 0, 4).' เวลา '.$Time
+					'text' => $Last_rain.' ครั้ง เมื่อ '.substr($Date, 0, 10).' เวลา '.$Time
 					];
 				
 			}else{
