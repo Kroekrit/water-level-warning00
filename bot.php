@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 				$content = json_decode($json_rain);
 				$Last_rain = $content->field1;
 				$Date = $content->created_at;
-				$Time = substr($Date, 12, 19);
+				$Time = substr($Date, 12, 18);
 				
 				
 				$messages = [
