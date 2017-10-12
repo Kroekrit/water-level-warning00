@@ -43,9 +43,10 @@ if (!is_null($events['events'])) {
 				$json_rain = file_get_contents($URL_rain);
 				$content = json_decode($json_rain);
 				$Last_rain = $content->field1;
+				
 				$messages = [
 					'type' => 'text',
-					'text' => $Last_rain + ' ครั้ง'
+					'text' => $Last_rain.' ครั้ง'
 					];
 				
 			}else{
