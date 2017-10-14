@@ -50,7 +50,7 @@ if (!is_null($events['events'])) {
 				
 				$messages = [
 					'type' => 'text',
-					'text' => $Last_rain.' ครั้ง เมื่อ '.substr($Date, 0, 10).' เวลา '.$Time
+					'text' => $Last_rain.' ครั้ง เมื่อ '.substr($Date, 0, 10).' เวลา '.$Time_
 					];
 				
 			}else{
