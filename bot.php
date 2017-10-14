@@ -45,6 +45,7 @@ if (!is_null($events['events'])) {
 				$Last_rain = $content->field1;
 				$Date = $content->created_at;
 				$Time = date(substr($Date, 11, 8));
+				$Time_ = date("H:i:s", strtotime("+1 Hour", strtotime($Time)));
 				
 				
 				$messages = [
